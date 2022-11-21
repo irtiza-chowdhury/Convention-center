@@ -1,0 +1,25 @@
+@import "../config/variable";
+
+.footer{
+    font-family: Manrope;
+    
+
+    &__copyright{
+        font-weight: 400;
+        font-style: 14px;
+        opacity: 0.5;
+        @media (max-width: 767.98px){
+            text-align: center;
+            padding-top: 30px !important;
+        }
+    }
+    &__brief{
+        font-weight: 500;
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: right;
+        @media (max-width: 767.98px){
+            text-align: center;
+        }
+    }
+}

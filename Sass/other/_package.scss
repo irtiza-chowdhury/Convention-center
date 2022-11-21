@@ -1,0 +1,52 @@
+@import "../config/variable";
+@import "../utilities/utilities";
+
+.package{
+    &__title{
+        font-family: Poppins;
+        font-weight: 600;
+    }
+    &__content{
+        position: relative;
+        @media (max-width: 991.98px){
+            margin-top: 30px;
+        }
+        &:hover{
+            position: absolute;
+            background: $blue;
+            color: $white;
+            top: -10px;
+            left: 0;
+            box-shadow: 0px 6px 11px $white, 0px 8px 20px $blue;
+            border: none ;
+
+            .package__content-badge{
+                display: block !important;
+            }  
+        }
+        &-title{
+            font-family: Roboto;
+            font-weight: 700;
+        }
+        &-text{
+            font-family: Poppins;
+            font-weight: 400;
+            opacity: 0.6;
+        }
+        &-item{
+            @extend .package__content-text;
+        }
+        button{
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 14px;
+            @include button;
+            background: $light_gray;
+            color: $blue;
+            &:hover{
+                background: $white;
+            color: $blue;
+            }
+        }
+    }
+}

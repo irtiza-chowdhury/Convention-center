@@ -1,0 +1,42 @@
+@import "../config/variable";
+
+.momment{
+    &__brief{
+        font-family: Poppins;
+
+        &-badge{
+            border-left: 3px solid $blue;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0px 2px 5px $gray;
+            bottom: 100%;
+            left: 50%;
+            background: $white;
+           span{
+            &:hover{
+                color: $blue;
+            }
+           }
+           @media (max-width:991.98px){
+            top: 0;
+           }
+           @media (max-width:523.98px){
+            left: 20px;
+           }
+           @media (max-width: 473.98px){
+            width: 70%;
+           }
+           @media (max-width: 343.98px){
+            width: 75%;
+           }
+        }
+        &-title{
+            font-weight: 700;
+        }
+        &-text{
+            font-weight: 700;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+    }
+}

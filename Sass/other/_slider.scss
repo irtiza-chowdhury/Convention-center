@@ -1,0 +1,54 @@
+@import "../config/variable";
+@import "../utilities/utilities";
+
+.slider{
+    &__content{
+        position: relative;
+        @media (max-width:667.98px){
+            height: 450px !important;
+            img{
+                height: 100%;
+            }
+        }
+        
+        &::before{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: $black;
+            opacity: 0.5;
+        }
+        &-text{
+            width: 50% ;
+            margin: 0 auto;
+            font-family: Poppin;
+            
+            @media (max-width:667.98px){
+                width: 95%;   
+                left: 0 !important; 
+                right: 0!important;       
+            }
+            h2{
+                font-weight: 600;
+
+                @media (max-width:667.98px){
+                    font-size: 23px;
+                }
+            }
+            p{
+                font-size: 16px;
+                font-weight: 300;
+                opacity: 0.8;
+               
+            }
+            button{
+                font-weight: 700;
+                font-size: 14px;
+                @include button;
+              
+            }
+        }
+        
+    }
+}

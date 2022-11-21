@@ -1,0 +1,40 @@
+@import "../config/variable";
+
+.header{
+    &__navbar{
+        font-family: Poppins;
+        &-title{
+            font-weight: 700;
+            font-size: 22px !important;
+            @media (max-width: 499.98px){
+                font-size: 14px !important;
+            }
+        }
+        &-content{
+            font-weight: 500;
+            font-size: 16px !important;
+            @media (max-width: 499.98px){
+                font-size: 14px !important;
+            }
+            
+            li{
+                &:hover{
+                    color: $blue !important;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 60px;
+                        height: 2px;
+                        bottom: 0;
+                        right: 10px;
+                        background: $blue;
+                        @media (max-width: 991.98px){
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}

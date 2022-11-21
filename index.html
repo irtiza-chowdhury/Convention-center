@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma to bootstrap</title>
+    <!-- Poppins font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');</style>
+    <!-- Roboto font-->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');</style>
+    <!-- Inter font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');</style>
+    <!-- MAnrope fonts -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');</style>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="asset/bt_css/bootstrap.min.css">
+
+    <!-- fontawesome kits -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section start -->
+    <section class="header mt-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light header__navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand header__navbar-title" href="#">Abacus Convention Center</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end header__navbar-content">
+                      <li class="nav-item">
+                        <a class="nav-link active header__navbar-content-item" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active header__navbar-content-item ps-3" aria-current="page" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active header__navbar-content-item ps-3" aria-current="page" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active header__navbar-content-item ps-3" aria-current="page" href="#">Subscribe</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header serction end -->
+
+    <!-- slider start -->
+    <section class="slider mt-4">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active slider__content">
+                <img src="asset/img/slider_1.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-md-block slider__content-text">
+                  <h2>Perfect venue for your <br> next event</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et itaque soluta maxime iusto provident?</p>
+
+                  <button type="button" >Book Now</button>
+                </div>
+              </div>
+              <div class="carousel-item slider__content">
+                <img src="asset/img/Slider_2.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-md-block  slider__content-text">
+                  <h2>Perfect view to make memorable<br> your moment</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, rerum. Lorem, ipsum. lorem.</p>
+                  <button type="button" >Book Now</button>
+                </div>
+              </div>
+              <div class="carousel-item slider__content">
+                <img src="asset/img/Slider_3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block  slider__content-text">
+                  <h2>Specialist photographer to<br> capture emotions</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, maxime? Corrupti, magni vitae!</p>
+                  <button type="button" >Book Now</button>
+                  
+                </div>
+              </div>
+              <div class="carousel-item slider__content">
+                <img src="asset/img/Slider_4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block slider__content-text">
+                  <h2>Specialist photographer to<br> capture emotions</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nostrum quidem id Lorem, ipsum.</p>
+                  <button type="button" >Book Now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <!-- slider end -->
+
+    <!-- momments section start -->
+    <section class="momment mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 momment__image mt-3 order-1 order-lg-0">
+            <img class="img-fluid" src="asset/img/moment.png" alt="">
+          </div>
+          <div class="col-lg-6 momment__brief position-relative my-auto order-0 order-lg-1">
+            <div class="momment__brief-badge position-absolute py-3 px-4"><span class="pe-1"><i class="fa-solid fa-gift"></i></span>20% off on next booking<span class="momment__brief-badge-cross position-absolute top-0 start-75"><i class="fa-solid fa-xmark"></i></span></div>
+            <h2 class="momment__brief-title">Every momment is Precious</h2>
+            <div class="momment__brief-text py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo consequuntur, asperiores praesentium recusandae perspiciatis quis distinctio quas facere. Ullam earum debitis doloribus.
+            </div>
+            <div class="momment__brief-button">
+              <button type="button" class="btn btn-primar btn-outline-primary mt-3">Explore our album <span class="ps-2"><i class="fa-solid fa-arrow-right"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- momments section end -->
+
+    <!-- package sectrion start -->
+    <section class="package mt-5">
+      <h1 class="package__title my-4 text-center">Our Packages</h1>
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 m-0">
+            <div class="card position-relative border-light package__content " style="width: 13rem;">
+              <span class="position-absolute d-none top-0 start-100 translate-middle badge rounded-pill bg-danger package__content-badge">Hot</span>
+            <div class="card-body ">
+              <h5 class="card-title position-relative package__content-title">$300</h5>
+              <h5 class="card-subtitle my-2 package__content-title">business fair</h5>
+              <p class="package__content-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa?</p>
+              <ul class="package__content-item list-unstyled">
+                <li><span><i class="fa-regular fa-circle-check"></i></span> Item 1</li>
+                <li><span><i class="fa-regular fa-circle-check"></i></span> Item 2</li>
+                <li><span><i class="fa-regular fa-circle-check"></i></span> Item 3</li>
+                <li><span><i class="fa-regular fa-circle-check"></i></span> Item 4</li>
+                <li><span><i class="fa-regular fa-circle-check"></i></span> Item 5</li>
+                <li><span><i class="fa-regular fa-circle-check"></i></span> Item 6</li>
+              </ul>
+             <button type="button" class="rounded-pill">Choose plan</button>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-md-6 m-0">
+            <div class="card position-relative border-light package__content" style="width: 13rem;">
+              <span class="position-absolute d-none  top-0 start-100 translate-middle badge rounded-pill bg-danger package__content-badge">Hot</span>
+              <div class="card-body">
+                <h5 class="card-title package__content-title">$500</h5>
+                <h5 class="card-subtitle my-2 package__content-title">wedding basic</h5>
+                <p class="package__content-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa?</p>
+                <ul class="package__content-item list-unstyled">
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 1</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 2</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 3</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 4</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 5</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 6</li>
+                </ul>
+               <button type="button" class="rounded-pill">Choose plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card position-relative border-light package__content" style="width: 13rem;">
+              <span class="position-absolute d-none  top-0 start-100 translate-middle badge rounded-pill bg-danger package__content-badge">Hot</span>
+              <div class="card-body ">
+                <h5 class="card-title package__content-title">$800</h5>
+                <h5 class="card-subtitle my-2 package__content-title">wedding plus</h5>
+                <p class="package__content-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa?</p>
+                <ul class="package__content-item list-unstyled">
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 1</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 2</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 3</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 4</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 5</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 6</li>
+                </ul>
+               <button type="button" class="rounded-pill" >Choose plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card position-relative border-light package__content" style="width: 13rem;">
+              <span class="position-absolute d-none top-0 start-100 translate-middle badge rounded-pill bg-danger package__content-badge">Hot</span>
+              <div class="card-body">
+                <h5 class="card-title package__content-title">$1200</h5>
+                <h5 class="card-subtitle my-2 package__content-title">corporate event</h5>
+                <p class="package__content-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa?</p>
+                <ul class="package__content-item list-unstyled">
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 1</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 2</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 3</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 4</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 5</li>
+                  <li><span><i class="fa-regular fa-circle-check"></i></span> Item 6</li>
+                </ul>
+               <button type="button" class="rounded-pill">Choose plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      </div>
+      
+    </section>
+    <!-- package sectrion end -->
+
+    <!-- review section start -->
+    <section class="review">
+      <h1 class="review__title mt-5 text-center">Happy clients says</h1>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card rounded border-light mt-3 review__card" >
+              <div class="card-body text-center">
+                <p class="review__card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque facilis consequuntur exercitationem dignissimos eius quidem.</p>
+                <div class="review__card-customer my-4 ">
+                  <div class="review__card-customer-image">
+                    <img class="img-fluid" src="asset/img/man_1.png" alt="">
+                  </div>
+                  <div class="review__card-customer-name my-3">Benzo Mile</div>
+                  <div class="review__card-customer-post">Banker</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card rounded border-light mt-3 review__card">
+              <div class="card-body text-center">
+                <p class="review__card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque facilis consequuntur exercitationem dignissimos eius quidem.</p>
+                <div class="review__card-customer my-4 ">
+                  <div class="review__card-customer-image">
+                    <img class="img-fluid" src="asset/img/man_2.png" alt="">
+                  </div>
+                  <div class="review__card-customer-name my-3">John Drake</div>
+                  <div class="review__card-customer-post">Banker</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card rounded border-light mt-3 review__card">
+              <div class="card-body text-center">
+                <p class="review__card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque facilis consequuntur exercitationem dignissimos eius quidem.</p>
+                <div class="review__card-customer my-4">
+                  <div class="review__card-customer-image">
+                    <img class="img-fluid" src="asset/img/man_3.png" alt="">
+                  </div>
+                  <div class="review__card-customer-name my-3">Cret Yater</div>
+                  <div class="review__card-customer-post">Banker</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- question section start -->
+    <section class="question my-5">
+      <h1 class="question__title py-5 text-center">Freqeuntly Asked Questions</h1>
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-0">
+            <div class="accordion question__accordion" id="accordionExample">
+              <div class="accordion-item my-2 question__accordion-content">
+                <h2 class="accordion-header question__accordion-content-title" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What the diffrence between event design and event planning?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body question__accordion-content-answer">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ipsum error id magni facilis, autem aspernatur placeat temporibus debitis itaque maxime fuga corrupti nisi. Et nihil vitae eaque porro repellat Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, autem.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-2 question__accordion-content">
+                <h2 class="accordion-header question__accordion-content-title" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How early do we need start event planning?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body question__accordion-content-answer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ullam commodi facilis dolor veritatis. Minima fuga iusto tempore nam repudiandae, necessitatibus totam non ex aut aspernatur earum molestias laborum esse! Iure explicabo officiis inventore ipsa ex veniam natus laboriosam deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sint.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-2 question__accordion-content">
+                <h2 class="accordion-header question__accordion-content-title" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is your refund and cancellation policy?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body question__accordion-content-answer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic temporibus impedit tenetur earum qui tempore reprehenderit amet, veritatis officiis id! Sed debitis accusantium impedit repudiandae recusandae, accusamus vero similique ut explicabo aspernatur officiis, doloremque fugiat! Nostrum consequuntur eveniet enim.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-2 question__accordion-content">
+                <h2 class="accordion-header question__accordion-content-title" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How do you keep budgets on track?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body question__accordion-content-answer">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis porro repudiandae deserunt deleniti, magnam sed in iste, est, explicabo asperiores at ullam voluptas incidunt. Inventore repudiandae et maiores quibusdam. Voluptatum excepturi tenetur alias minima sunt officia rerum sapiente, pariatur corrupti!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 my-auto order-0 order-lg-1 question__image">
+            <img class="img-fluid" src= "asset/img/review.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- question section end -->
+
+    <!-- footer section start -->
+    <section class="footer bg-dark text-light mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 my-auto order-1 order-md-1 footer__copyright">
+            &copy; 2020 bike. All rights reserverd.
+          </div>
+          <div class="col-lg-6 col-md-6 pe-5 order-0 order-md-1 footer__brief">
+            <div class="footer__brief-title pe-4">
+              Get the App
+            </div>
+            <div class="footer__brief-image my-3">
+              <img class="img-fluid" src="asset/img/app_store.png" alt="">
+            </div>
+            <div class="footer__brief-image">
+              <img class="img-fluid" src="asset/img/play_store.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section end -->
+
+    <!-- boostrap js -->
+    <script src="asset/bt_js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+</html>
