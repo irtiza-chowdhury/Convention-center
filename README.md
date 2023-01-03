@@ -2,6 +2,10 @@
  
 Design link:https://www.figma.com/file/RsblqYp4xU8W6H8YTkItB8/convention-center-(Community)?node-id=0%3A1&t=YqsfEVsDarucelYi-0
 
+
+Live sitre URL: https://convention-center-rose.vercel.app/
+
+
 Dextop view
 
 ![Convention center-Dextop-view](https://user-images.githubusercontent.com/118212340/203126031-d864790a-04d2-474f-b25c-61372c43e811.png)
